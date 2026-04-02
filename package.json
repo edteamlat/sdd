@@ -1,0 +1,33 @@
+{
+  "name": "task-cli",
+  "version": "1.0.0",
+  "description": "Gestor de tareas personales desde la terminal",
+  "main": "dist/index.js",
+  "bin": {
+    "task": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "test": "vitest run",
+    "prepare": "npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "better-sqlite3": "^12.8.0",
+    "cli-table3": "^0.6.5",
+    "commander": "^14.0.3"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "^25.5.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.2"
+  }
+}
